@@ -1,0 +1,83 @@
+.boxes div {
+  border: 2px solid rgb(44, 183, 230);
+  padding: 10px;
+}
+.boxes :first-child {
+  background-color: rgb(138, 169, 64);
+}
+.boxes :nth-child(3) {
+  color: rgb(246, 5, 5);
+}
+.boxes :nth-last-child(2) {
+  margin-left: 90px;
+  background-color: rgb(87, 197, 73);
+}
+.boxer::first-line {
+  background-color: rgb(164, 100, 54);
+}
+#first::first-letter {
+  color: coral;
+  font-size: 45px;
+}
+.boxes * {
+  border-radius: 20px;
+  margin: 15px;
+}
+[data-color="primary"] {
+  color: rgb(79, 13, 161);
+  background-color: rgb(142, 148, 166);
+  transform: translate(130px);
+  text-transform: uppercase;
+}
+
+.boxes::before{
+    content:"i will become a good web developer i am here by using :: after pseudo element";
+    background-color: rgb(126, 169, 73);
+    color: rgb(119, 15, 216);
+    margin-left: 60px;
+    padding: 10px;
+    
+}
+
+/* container  styles */
+.container div {
+  border: 3px solid rgb(5, 64, 5);
+  margin: 10px;
+}
+.container :nth-child(even) {
+  color: rgb(68, 8, 8);
+  padding-left: 14px;
+  border-radius: 15px;
+  background-color: rgb(70, 108, 31);
+}
+.container :nth-child(odd) {
+  transform: translate(70px);
+  border-radius: 19px;
+  padding-left: 10px;
+  margin: 13px;
+}
+.container::after{
+content: "I will be a good web developer i am here for the use of :: before{content} pseudo elements";
+border: 3px solid rgb(7, 117, 7);
+margin: 40px;
+padding: 20px;
+padding: 10px;
+}
+
+
+/* bag styles */
+.bag ::selection{
+
+    color:rgb(233, 9, 9) ;
+    background-color: rgb(141, 181, 60);
+
+}
+.bag{
+    border: 3px solid rgb(87, 5, 5);
+    margin-top: 20px ;
+}
+/* input styles */
+input::placeholder{
+    color: rgb(4, 110, 25);
+    background-color: rgb(145, 139, 129);
+}
